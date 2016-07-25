@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>(2.4 Pairing with Skulick, release 2: build a form)</title>
+</head>
+<body>
+
+<form name="car forms" action="success.html" method="post">
+  <fieldset>
+  	
+  	<div>
+  		
+  		<label>What is your favorite car?</label>
+  		<select name="car models">
+  			<option value="Volov">Volov</option>
+  			<option value="Saab">Saab</option>
+  			<option value="Mercedes">Mercedes</option>
+  			<option value="Audi">Audi</option>
+  		</select>
+  	</div>
+  	<div>
+  		<textarea rows="4" cols="50" name="reasons">
+  		What are you looking for cars
+  		</textarea>
+  	</div>
+  	<div>
+  		<label>First Name:</label>
+  		<input type="text" name="firstname">
+  		<br>
+  		<label>Last Name:</label>
+  		<input type="text" name="lastname">
+  	</div>
+  	<div>
+  		<button type="submit" action="success.html">Submit my answer!</button>
+  	</div>
+  	<div>
+  		<input type="checkbox" name="verify" value="agree">Is this your final answer?
+  	</div>
+  	<div>
+  		<input type="radio" name="price" value="$5,000-$10,000" checked> $5,000 - $10,000<br>
+  		<input type="radio" name="price" value="$10,000-$15,000"> $10,000 - $15,000<br>
+  		<input type="radio" name="price" value="$15,000-$20,000"> $15,000 - $20,000<br>
+
+  	</div>
+
+  	</div>
+  </fieldset>
+</form>
+
+
+</body>
+</html>

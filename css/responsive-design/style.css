@@ -53,5 +53,64 @@ main{
   width: 80%;
   
 }
+
+
+@media screen and (max-width: 500px) {
+  section#external-links{
+    display: none;
+  }
+  main p {
+
+    display: none;
+  }
+  main figure figcaption{
+    display: none;
+  }
+
+  main figure img{
+    position: relative;
+    width: 100%;
+  }
+  main blockquote{
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    position: absolute;
+    top: 180px;
+    left: 0;
+    max-width: 250px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  section#external-links {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+    font-size: .8em;
+    background-color: #b3b3b3;
+
+  }
+  
+  section#external-links a:hover {
+  color:white;
+  font-size: medium;
+
+}
+section#external-links h1 {
+    font-size: xx-large;
+}
+section#external-links a {
+  font-size: x-large;
+    margin: auto;
+    margin-left: 0;
+    margin-top: 0;
+    padding: auto;
+    border-bottom: 1px solid #e9e9e9;
+    cursor: pointer;
+}
+
+
+}
+
   
 

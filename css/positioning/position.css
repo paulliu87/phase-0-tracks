@@ -1,0 +1,20 @@
+body img#octopus{
+	position: absolute;
+	z-index: -1;
+	justify-content: center;
+	margin: 300px;
+
+}
+
+body img#glass{
+	position: absolute;
+	top: 410px;
+	left: 350px;
+
+}
+
+body img#hat{
+	position: absolute;
+	top: 250px;
+	left: 290px;
+}

@@ -1,0 +1,26 @@
+/*teaching a robot to use elevator*/
+
+-walking towards elevator
+-press the upward button
+-while the waiting time is less than 20mins
+	-if the door is open 
+		-walking forwards for 1m
+		-turn around 180 degree
+		-ask for which floor to go to
+		-move hand to right
+			-if there is no button there
+				-move hand to left
+		-rising hand to 2m
+		-until find a button 
+			-move slowly downwards
+		-until the button match the floor we are going to
+				-stop moving the hand
+					-if reaches the bottom of the panel
+							-move to the second colume
+							-move to 2 m high
+		-press the button
+		-stop moving 
+		-when the button's light is off and door is open moving forwards 2m
+	-else waite
+-stop moving
+

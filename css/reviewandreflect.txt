@@ -1,0 +1,40 @@
+Name at least three categories of CSS adjustments (example: colors)?
+	1.color
+	2.font
+	3.position
+	4.size
+	5.image
+
+What are the three ways to link a CSS rule to an HTML document? Which one is the best and why?
+	Inline - by using the style attribute in HTML elements
+	Internal - by using a <style> element in the <head> section
+	External - by using an external CSS file
+
+What is a selector? Give examples of at least three types of selectors.
+	In CSS, selectors are patterns used to select the element(s) you want to style.
+
+	1. .class
+	2. #id
+	3. a:active
+
+What is the box model?
+
+	All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
+
+Explain and give an example of the cascading effect of CSS.
+	HTML Content
+
+	<p>
+ 	<strong>C</strong>ascading
+  	<strong>S</strong>tyle
+  	<strong>S</strong>heets
+	</p>
+	CSS Content
+
+	p {color:blue; text-decoration:underline}
+	strong {color:red}
+
+Name two CSS techniques that assist in responsive design.
+
+	1. using percentage instead of px
+	2. using media queries

@@ -62,8 +62,10 @@ encrypt("zed")
 decrypt("bcd")
 decrypt("abc")
 
+decrypt(encrypt("swordfish"))
 
-
+#First we take the string and forward it by 1 letter ahead and then we decrypt it by 1 letter backwards
+#it gives the original string
 
 
 

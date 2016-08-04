@@ -26,10 +26,41 @@ def encrypt(str)
 	out
 end
 
-encrypt("ajfdajnadlal")
 
 
+#decrypt
+#ask the user for a string
+#find the length of the given string
+#define the output variable 
+#to go inside each charactor of the given string
+#condition check if it is a letter or space
+#if it is a space keep space
+#otherwise compare the letter from given to the alphabits string
+#replace the letter with alphabits letter index -1
+#end
 
+
+def decrypt(name)
+	len = name.length
+	result = ""
+	alphabits = "abcdefghijklmnopqrstuvwxyz"
+	for i in 0 ... len
+		if name[i]==" "
+			result += " "
+		elsif name[i]=="a"
+			result+="z"
+		else
+			result+= alphabits[alphabits.index(name[i])-1]
+		end
+	end
+	result
+end
+
+
+encrypt("abc")
+encrypt("zed")
+decrypt("bcd")
+decrypt("abc")
 
 
 

@@ -1,4 +1,4 @@
-puts "what is hamser's name?"
+puts "what is hamster's name?"
 
 hamster_name = gets.chomp
 
@@ -12,7 +12,7 @@ hamster_color = gets.chomp
 
 puts "Is the hamster a good candidate or adoption?"
 
-adoption = gets.chomp.to_b
+adoption = gets.chomp
 
 puts "How old is the hamster?"
 
@@ -24,6 +24,18 @@ else
 	hamster_age = hamster_age.to_i
 end
 
-
+puts "Hamster Information Worksheet"
+puts " "
+puts "Name: #{hamster_name}"
+puts "Volume: #{hamster_volume}"
+puts "Fur color: #{hamster_color}"
+if (adoption.downcase == "yes" || adoption == 1)
+	adoption = true
+	puts "This hamster can be adopted."
+else 
+	adoption = false
+	puts "This hamster can not be adopted."
+end
+puts "Hamster's age: #{hamster_age}"
 
 

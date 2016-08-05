@@ -23,19 +23,36 @@ if hamster_age == ""
 else
 	hamster_age = hamster_age.to_i
 end
+class String
+def bg_red;         "\e[41m#{self}\e[0m" end
+def bg_green;       "\e[42m#{self}\e[0m" end
+def bg_blue;        "\e[44m#{self}\e[0m" end
+def bg_cyan;        "\e[46m#{self}\e[0m" end
+def bg_gray;        "\e[47m#{self}\e[0m" end
+def bg_purple;      "\e[45m#{self}\e[0m" end
+def italic;         "\e[3m#{self}\e[23m" end
+def bold;           "\e[1m#{self}\e[22m" end
 
-puts "Hamster Information Worksheet"
+end
 puts " "
-puts "Name: #{hamster_name}"
-puts "Volume: #{hamster_volume}"
-puts "Fur color: #{hamster_color}"
+puts "Hamster Information Worksheet".bold
+puts " "
+puts "Name: 		"+"#{hamster_name}".bg_blue
+puts "Volume: 	"+"#{hamster_volume}".bg_cyan
+puts "Fur color: 	"+"#{hamster_color}".bg_blue
+puts "Hamster's age: 	"+"#{hamster_age}".bg_cyan
 if (adoption.downcase == "yes" || adoption == 1)
 	adoption = true
-	puts "This hamster can be adopted."
+	puts "Adoption: 	"+"#{adoption}".bg_purple
+	puts "This hamster can be adopted.".bg_green
 else 
 	adoption = false
-	puts "This hamster can not be adopted."
+	puts "Adoption: 	"+"#{adoption}".bg_purple
+	puts "This hamster can not be adopted.".bg_red
 end
-puts "Hamster's age: #{hamster_age}"
 
+puts " "
+puts "Blue color is a string type data.".bg_blue.italic
+puts "Cyan color is a integer type data.".bg_cyan.italic
+puts "Purlpe color is a boolean type data.".bg_purple.italic
 

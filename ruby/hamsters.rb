@@ -4,7 +4,7 @@ hamster_name = gets.chomp
 
 puts "What is the volume level of the hamster?"
 
-hamster_volume = gets.chomp
+hamster_volume = gets.chomp.to_i
 
 puts "What is hamster's fur color?"
 
@@ -12,7 +12,7 @@ hamster_color = gets.chomp
 
 puts "Is the hamster a good candidate or adoption?"
 
-adoption = gets.chomp
+adoption = gets.chomp.to_b
 
 puts "How old is the hamster?"
 
@@ -20,5 +20,10 @@ hamster_age = gets.chomp
 
 if hamster_age == ""
 	hamster_age = nil
+else
+	hamster_age = hamster_age.to_i
 end
+
+
+
 

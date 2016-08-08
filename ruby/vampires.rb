@@ -1,3 +1,11 @@
+puts "How many employees?"
+num_employee = gets.chomp
+
+while num_employee.to_i != 0
+
+	
+
+
 puts "What is your name?"
 name = gets.chomp
 puts "How old are you?"
@@ -20,4 +28,6 @@ elsif ((name.downcase == "drakecula")||(name.downcase == "tu fang"))
 	puts "Definitely a vampire."
 else
 	puts "Results inconclusive."
+end
+num_employee = num_employee.to_i - 1
 end

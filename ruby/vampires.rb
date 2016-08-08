@@ -16,11 +16,25 @@ puts "Our company cafeteria serves garlic bread. Should we order some for you?"
 like_garlic = gets.chomp
 puts "Would you like to enroll in the company’s health insurance?"
 need_insurance = gets.chomp
+puts "Please enter any allergies you have."
+allergies =[]
 
+jump = nil
 
-if (age.to_i <= 100) && ((like_garlic.downcase == "yes")||(need_insurance.downcase=="yes"))
+while true
+  input = gets.chomp
+  if (input=="sunshine")
+  	jump = true
+  end
+  break if ((input == "done")||(input=="sunshine"))
+
+  allergies << input
+end
+#puts "allergies list " + allergies.join(", ")
+
+if (age.to_i <= 100) && ((like_garlic.downcase == "yes")||(need_insurance.downcase=="yes"))&&(jump!=true)
 	puts "Probably not a vampire."
-elsif (age.to_i >= 100) && ((like_garlic.downcase == "no")||(need_insurance.downcase=="no"))
+elsif ((age.to_i >= 100) && ((like_garlic.downcase == "no")||(need_insurance.downcase=="no")))||(jump==true)
 	puts "Probably a vampire."
 elsif (age.to_i >= 100) && ((like_garlic.downcase == "no")&&(need_insurance.downcase=="no"))
 	puts "Almost certainly a vampire."

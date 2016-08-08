@@ -3,9 +3,6 @@ num_employee = gets.chomp
 
 while num_employee.to_i != 0
 
-	
-
-
 puts "What is your name?"
 name = gets.chomp
 puts "How old are you?"
@@ -44,4 +41,5 @@ else
 	puts "Results inconclusive."
 end
 num_employee = num_employee.to_i - 1
+ puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 end

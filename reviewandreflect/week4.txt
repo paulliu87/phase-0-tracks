@@ -1,0 +1,56 @@
+Variables
+1. What is a variable? Why might a programmer use a variable?
+More like a "box", programmer can use it to store important information or data. Example: first_name = "Paul"
+
+2. If the value of first_name is "Abraham" and last_name is "Lincoln", explain the order in which Ruby will run the line full_name = first_name + last_name, and what the final result will be.
+ruby will run first_name then last_name, add them together, update full_name the last.
+result: "AbrahamLincoln"
+
+Data Types
+3. For each of the following data types, write a short definition and give at least one example of when you might use the data type in a program. (Don't use an example we've already provided.)
+
+
+
+string: text, when we want to puts some text, like "Hello World"
+integer: number without decimal, example: number_of_people = 5
+float: more accurate data, example: pi = 3.1415926 
+nil:nothing or blank, initiate a variable without assign a value, example: nothing = nil
+boolean: true or false, example: infinite loop, while true
+Algorithms: desciption of process developing code, example: #first initiate a variable, update it and give a result
+
+4. What is an algorithm?
+An algorithm is a self-contained step-by-step set of operations to be performed.
+
+5. What are two common categories of algorithm in computer science? 
+1.Searching (like checking a VIP list for a certain name)
+2.Sorting (like alphabetizing a list of names, or making sure a list of numbers is organized from smallest to largest)
+3.Finding the shortest path between two points (like finding the quickest route home with a smartphone)
+Methods
+6. What is a method? Why might a programmer choose to use a method?
+A piece of code to perform a task. When we need to perform a same task over and over, we can use a method.
+
+7. Define the following terms as they relate to a method. 
+
+return value:Every method in Ruby returns a value by default. This returned value will be the value of the last statement. 
+side effect:In computer science, a function or expression is said to have a side effect if it modifies some state or has an observable interaction with calling functions or the outside world.
+parameter: the variable used as input in the method
+argument:an argument is a series of statements typically used to persuade someone of something or to present reasons for accepting a conclusion.
+implicit return: default return last statement.
+8. What are global scope and method scope? How do those scopes impact the availability of data at different points in a program?
+
+Global Scope assign variable that can be access by everyone.
+Method scope local variables.
+when a lot of people working on a same project, method scope can prevent program become very unpredictable.
+
+Control Flow
+9. What is control flow? Why might a programmer choose to use flow control?
+Control flow gives us the flexibility we're looking for. We can select different outcomes depending on information the user types, the result of a computation, or the value returned by another part of the program.
+
+10. Define the following terms as they relate to flow control.
+
+loop:Count-control, we need to run code to perform a task for number of times.
+if: conditional-control, condition that needs to check first
+else: conditional-control, preform the task if "if statement" does not meet.
+elsif:conditional-control, comnination of if and else, it checks as seondary condition.
+while: Repeat a loop as long some condition meets.
+until: Break a loop once some condition changes. 

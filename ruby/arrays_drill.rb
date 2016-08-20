@@ -44,4 +44,8 @@ meth1(array1,"five")
 array2 = ["five", "six", "seven", "eight"]
 
 new_array = array1 + array2
+<<<<<<< HEAD
 p new_array
+=======
+p new_array
+>>>>>>> 1894040b225e3ca5babaf0ad230f4270b46315c5

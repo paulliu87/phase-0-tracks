@@ -1,0 +1,42 @@
+header {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	max-width: 960px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #4d94ff;
+	font-color:white;
+}
+
+
+.column-1 {
+	position: relative;
+	display: inline-block;
+	vertical-align: text-top;
+	max-width: 480px;
+  	min-width: 200px;
+  	width: 50%;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	background-color: #cce6ff;
+}
+
+.column-2 {
+	position: relative;
+	display: inline-block;
+	vertical-align: text-top;
+  	max-width: 480px;
+  	min-width: 200px;
+  	width: 50%;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	background-color: #99ceff;
+}
+footer {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	max-width: 960px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #4d94ff;
+	font:white;
+
+}

@@ -1,5 +1,19 @@
+=begin
+Make a process of catching a pokemon
+1. def a pokemon with some instance methods
+2. def another pokemon with some instance methods
+3. counter a pokemon, create one
+4. ask user what to do
+5. Input: to attch pokemon with another pokemon
+6. escape the combat print a message
+7. catch pokemon  when its hp is low enough
+8. attach pokemon with user's pokemon and display the data
+	for example: what skill is used and how much hp left
+9. once the pokemon is caught, user can give a name to the pokemon
+Output: new pokemon's name and skills
 
-
+	
+=end
 
 
 

@@ -76,6 +76,7 @@ end
  # initialize VirusPredictor for each state
 
 #create an instance virus predictor by using the consatant of STATE_DATA 
+=begin
 alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
 #calling instance method of virus effect on instance of a class
 alabama.virus_effects
@@ -88,7 +89,14 @@ california.virus_effects
 
 alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
 alaska.virus_effects
+=end
+
+STATE_DATA.each do |state,pop_hash|
+  new_state = VirusPredictor.new(state,pop_hash[:population_density],pop_hash[:population])
+  new_state.virus_effects
+end
 
 
 #=======================================================================
 # Reflection Section
+

@@ -31,17 +31,17 @@ class VirusPredictor
   def predicted_deaths    
     # predicted deaths is solely based on population density
     if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
+      number_of_deaths = 0.4
     elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
+      number_of_deaths = 0.3
     elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
+      number_of_deaths = 0.2
     elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
+      number_of_deaths = 0.1
     else
-      number_of_deaths = (@population * 0.05).floor
+      number_of_deaths = 0.05
     end
-    number_of_deaths
+    (number_of_deaths*@population).floor
   end
 #instance method takes 2 parameters, and calculate the speed of spread.
 #prints out the result.

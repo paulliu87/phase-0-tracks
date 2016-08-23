@@ -21,14 +21,14 @@ class VirusPredictor
   end
 #define instance method that takes no paraments
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths    
+    speed_of_spread    
   end
 #define private method that does not expose to the public API
   private
 #instace method with 3 parameters, and calculate the number of death base on the population density. 
 #Print outs the result of it.
-  def predicted_deaths(population_density, population, state)
+  def predicted_deaths    
     # predicted deaths is solely based on population density
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -47,7 +47,7 @@ class VirusPredictor
   end
 #instance method takes 2 parameters, and calculate the speed of spread.
 #prints out the result.
-  def speed_of_spread(population_density, state) #in months
+  def speed_of_spread  
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0

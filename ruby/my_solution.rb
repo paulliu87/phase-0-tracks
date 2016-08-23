@@ -4,8 +4,11 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
+#Refer to a file relative to the current file
 #
-#
+#require: a full path to the file is required
+#require_relative: current file directory is default
+
 require_relative 'state_data'
 
 class VirusPredictor

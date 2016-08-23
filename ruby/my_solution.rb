@@ -20,9 +20,9 @@ class VirusPredictor
     @population_density = population_density
   end
 #define instance method that takes no paraments
+
   def virus_effects
-    predicted_deaths    
-    speed_of_spread    
+      puts "#{@state} will lose #{predicted_deaths} people in this outbreak and will spread across the state in #{speed_of_spread} months.\n\n"    
   end
 #define private method that does not expose to the public API
   private
@@ -41,9 +41,7 @@ class VirusPredictor
     else
       number_of_deaths = (@population * 0.05).floor
     end
-
-    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
-
+    number_of_deaths
   end
 #instance method takes 2 parameters, and calculate the speed of spread.
 #prints out the result.
@@ -63,8 +61,7 @@ class VirusPredictor
     else
       speed += 2.5
     end
-
-    puts " and will spread across the state in #{speed} months.\n\n"
+    speed
 
   end
 

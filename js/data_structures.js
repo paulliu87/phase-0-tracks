@@ -22,3 +22,20 @@ for (var i = 0; i < horse_names.length; i+=1){
 }
 
 console.log(horse_list);
+
+function Car(make,model,year){
+	this.make = make;
+	this.model = model;
+	this.year = year;
+
+	this.start = function(){console.log("Woom!");};
+	this.crash = function(){console.log("Boom!");};
+
+}
+
+var niceCar = new Car("BMW","335xi",2012);
+console.log(niceCar);
+
+niceCar.start();
+niceCar.crash();
+

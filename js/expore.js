@@ -4,7 +4,7 @@
 // with  a reversed order
 //3. return the new strng 
 //4.call out code display
-  
+
 
 
 
@@ -15,6 +15,23 @@ function reverse(string){
 	}
 	return new_string;
 }
+function test_result(function_result,expectation){
+	var compare_each_char = false;
+	for (var i=0 ; i < function_result.length; i++){
+		if (function_result[i] != expectation[i]){
+			console.log("The reverse function does not work!");
+			compare_each_char = false;
+			break ;}
+			else{
+			compare_each_char =true;	
+			}
+	}
+	if (compare_each_char == true) {
+			console.log("The reverse function works perfectly!");
+	}
+	
+}
 
 console.log("hello");
 console.log(reverse("hello"));
+console.log(test_result(reverse("hello"),"olleh"));

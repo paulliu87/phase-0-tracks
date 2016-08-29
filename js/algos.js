@@ -42,8 +42,33 @@ function find_key_value_match(sample_1,sample_2){
 	return compare_match;
 }
 
+//Release 2
+//define a function with input of an intiger
+//define a string with all letters
+//for loop stops till the as many time as the input
+//define a local variable string that store the a string temporarily
+//another loop stops at random number from 1-10
+//push the string to array
+//return the new array
+
+function create_random_array(length){
+	var alph = "abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	var arr = [];
+	for (var i = 0; i < length;i++){
+		var temp_word = "";
+		for (var j = 0; j < Math.floor((Math.random() * 10) + 1);j++){
+			var random_index = Math.floor((Math.random() * alph.length) + 1);
+			temp_word+=alph[random_index];
+			}
+		arr.push(temp_word);
+		
+	}
+	return arr;
+}
+
 //driver code for release 0
 console.log(find_longest_phrase(["long phrase","longest phrase","longer phrase","eiorjaiojioejeaiojaier"]));
 //driver code for elease 1
-
 console.log(find_key_value_match({name: "Steven", age: 54},{name: "Tamir", age: 53}));
+//driver code for elease 2
+console.log(create_random_array(5));

@@ -66,9 +66,18 @@ function create_random_array(length){
 	return arr;
 }
 
+function driver_code(test_times){
+	for (var i = 0; i < test_times; i++){
+		var test_arr = create_random_array(Math.floor((Math.random() * 15) + 1));
+		console.log(test_arr);
+		var longest_word = find_longest_phrase(test_arr);
+		console.log(longest_word);
+	}
+}
+
 //driver code for release 0
 console.log(find_longest_phrase(["long phrase","longest phrase","longer phrase","eiorjaiojioejeaiojaier"]));
 //driver code for elease 1
 console.log(find_key_value_match({name: "Steven", age: 54},{name: "Tamir", age: 53}));
 //driver code for elease 2
-console.log(create_random_array(5));
+driver_code(10);

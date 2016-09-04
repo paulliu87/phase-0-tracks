@@ -1,0 +1,65 @@
+Display the information in one table (either table is fine).
+
+sqlite> SELECT * FROM heros;
+1|Mighty|Soldier|Sword|25|1989
+2|Magical|Wizard|Stuff|27|1818
+3|Hawk|Ranger|Bow|15|1978
+
+----------------------------------------------------------------------------------
+
+Update an item that meets some condition (you can choose a condition that makes sense).
+sqlite> UPDATE heros SET level=26 WHERE class="Soldier";
+sqlite> SELECT * FROM heros;
+1|Mighty|Soldier|Sword|26|1989
+2|Magical|Wizard|Stuff|27|1818
+3|Hawk|Ranger|Bow|15|1978
+
+----------------------------------------------------------------------------------
+
+Display the information in both tables using one query.
+sqlite> SELECT * FROM heros, classes,weapon_list WHERE heros.class=classes.class AND heros.weapon=weapon_list.name;
+1|Mighty|Soldier|Sword|26|1989|1|Soldier|200|50|5|20|1|Sword|10|5|10
+2|Magical|Wizard|Stuff|27|1818|2|Wizard|90|200|3|0|2|Stuff|20|5|20
+3|Hawk|Ranger|Bow|15|1978|3|Ranger|100|50|7|40|3|Bow|5|20|40
+
+----------------------------------------------------------------------------------
+
+Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+sqlite> SELECT heros.name, heros.class, classes.HP,classes.MP FROM heros JOIN classes ON heros.class=classes.class;
+Mighty|Soldier|200|50
+Magical|Wizard|90|200
+Hawk|Ranger|100|50
+
+----------------------------------------------------------------------------------
+
+Delete an item that meets some condition (you can choose a condition that makes sense).
+sqlite> DELETE FROM heros
+   ...> WHERE class="Ranger";
+sqlite> SELECT * FROM heros;
+1|Mighty|Soldier|Sword|26|1989
+2|Magical|Wizard|Stuff|27|1818
+
+----------------------------------------------------------------------------------
+
+There are lots of different kinds of joins. What are they? Can you apply different conditions to a join to change what's displayed? Can you bookmark any good diagrams that will help you tell different joins apart in the future?
+sqlite> SELECT heros.name, weapon_list.damage, weapon_list.criticalchance
+   ...> FROM heros
+   ...> INNER JOIN weapon_list
+   ...> ON heros.weapon=weapon_list.name;
+Mighty|10|10
+Magical|20|20
+
+----------------------------------------------------------------------------------
+
+sqlite> SELECT * FROM heros LEFT JOIN classes ON heros.class=classes.class;
+1|Mighty|Soldier|Sword|26|1989|1|Soldier|200|50|5|20
+2|Magical|Wizard|Stuff|27|1818|2|Wizard|90|200|3|0
+
+----------------------------------------------------------------------------------
+
+sqlite> SELECT * FROM heros RIGHT JOIN classes ON heros.class=classes.class;
+Error: RIGHT and FULL OUTER JOINs are not currently supported
+
+
+
+

@@ -1,0 +1,22 @@
+body {
+	background-color: #ff471a;
+}
+
+div { 
+	margin-left: 100px;
+	display: inline-block;
+ }
+
+ .new_color {
+ 	background-color: #00ff00;
+
+ }
+
+#shap_1{width:100px; height:100px; padding:2em; border:10px solid white; background-color:#cc0066;}
+
+#shap_2{width:100px; height:100px; padding:2em; border:10px solid white; border-radius: 50%; background-color:#800000;}
+
+#shap_3{width:100px; height:100px; padding:2em; border:10px solid white; background-color:#000033;}
+
+ html {margin:2em; font-family:Helvetica, Arial, sans-serif;}
+    hr {margin:2em 0;}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project 19</title>
+  <link rel="stylesheet" type="text/css" href="prac_jquery.css">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+<body>
+
+<hr>
+  <div id="shap_1"></div>
+  <div id="shap_2"></div>
+  <div id="shap_3"></div>
+ 
+  <script>
+  $('#shap_1').on('click', function(){
+    $(this).animate({borderRadius: '50%'}, 500)
+  ;
+  });
+ 
+ $('#shap_2').on('click', function(){
+    $(this).animate({borderRadius: '0%'}, 500)
+  ;
+  });
+
+   $('shap_3').click( function() {
+    $(this).toggleClass("new_color");
+  } );
+  </script>
+  
+
+</body>
+</html>

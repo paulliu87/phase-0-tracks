@@ -6,7 +6,7 @@ set :public_folder, File.dirname(__FILE__) + '/static'
 
 db = SQLite3::Database.new("students.db")
 db.results_as_hash = true
-#db.execute("CREATE TABLE IF NO EXISTS campus (campus_name varchar(255))")
+db.execute("CREATE TABLE IF NOT EXISTS campus (campus_name varchar(255))")
 # show students on the home page
 get '/' do
   @students = db.execute("SELECT * FROM students")
